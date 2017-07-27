@@ -17,7 +17,7 @@ defmodule ExTwilio.UrlGenerator do
   # Examples
 
       iex> build_url(Resource)
-      "#{Config.base_url}/Accounts/#{Config.account_sid}/Resources.json"
+      "#{Config.base_url}/Resources.json"
 
       iex> build_url(Resource, nil, account: 2)
       "#{Config.base_url}/Accounts/2/Resources.json"
@@ -26,13 +26,13 @@ defmodule ExTwilio.UrlGenerator do
       "#{Config.base_url}/Accounts/2/Resources/1.json"
 
       iex> build_url(Resource, 1)
-      "#{Config.base_url}/Accounts/#{Config.account_sid}/Resources/1.json"
+      "#{Config.base_url}/Resources/1.json"
 
       iex> build_url(Resource, nil, page: 20)
-      "#{Config.base_url}/Accounts/#{Config.account_sid}/Resources.json?Page=20"
+      "#{Config.base_url}/Resources.json?Page=20"
 
       iex> build_url(Resource, nil, iso_country_code: "US", type: "Mobile", page: 20)
-      "#{Config.base_url}/Accounts/#{Config.account_sid}/Resources/US/Mobile.json?Page=20"
+      "#{Config.base_url}/Resources/US/Mobile.json?Page=20"
 
       iex> build_url(Resource, 1, sip_ip_access_control_list: "list", account: "account_sid")
       "#{Config.base_url}/Accounts/account_sid/SIP/IpAccessControlLists/list/Resources/1.json"
