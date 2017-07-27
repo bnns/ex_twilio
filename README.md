@@ -112,6 +112,8 @@ ExTwilio currently supports the following Twilio endpoints:
     - [Participant](https://www.twilio.com/docs/api/2010-04-01/rest/participant)
 - [ConnectApp](https://www.twilio.com/docs/api/2010-04-01/rest/connect-apps)
 - [IncomingPhoneNumber](https://www.twilio.com/docs/api/2010-04-01/rest/incoming-phone-numbers)
+- [Faxes](https://www.twilio.com/docs/api/fax/rest/faxes)
+    - [FaxMedia](https://www.twilio.com/docs/api/fax/rest/fax-media)
 - [Message](https://www.twilio.com/docs/api/2010-04-01/rest/message)
     - [Media](https://www.twilio.com/docs/api/2010-04-01/rest/media)
 - [Notification](https://www.twilio.com/docs/api/notifications/rest)

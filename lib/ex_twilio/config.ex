@@ -47,6 +47,8 @@ defmodule ExTwilio.Config do
 
   def task_router_websocket_base_url(), do: "https://event-bridge.twilio.com/v1/wschannels"
 
+  def fax_url(), do: "https://fax.twilio.com/v1"
+
   @doc """
   A light wrapper around `Application.get_env/2`, providing automatic support for
   `{:system, "VAR"}` tuples.
